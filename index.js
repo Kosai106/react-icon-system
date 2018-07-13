@@ -15,4 +15,4 @@ const Icon = props => {
   )
 }
 
-module.exports = Icon
+export default Icon
