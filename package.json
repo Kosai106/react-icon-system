@@ -1,4 +1,11 @@
 {
+  "name": "react-icon-system",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
     "react": "^16.4.1",
     "svg-inline-loader": "^0.8.0"
