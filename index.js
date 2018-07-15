@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import iconMap from "./lib/iconMap";
+
+export const iconMap = dir => {
+  const fileList = require.context(dir, true, /[\s\S]*$/);
+  let map = {};
+  fileList.keys().forEach(fileName => {
+    fileName = fileName.replace('./', '');
+    map[fileName.replace('.svg', '')] = require(`!svg-inline-loader!${dir}/${fileName}`);
+  });
+
+  return map
+}
 
 class Icon extends Component {
   render() {
@@ -11,7 +21,7 @@ class Icon extends Component {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         aria-hidden="true"
-        dangerouslySetInnerHTML={{ __html: iconMap[props.src] }}
+        dangerouslySetInnerHTML={{ __html: props.src }}
       />
     );
   }
