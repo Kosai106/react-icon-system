@@ -1,16 +1,5 @@
 import React, { Component } from "react";
 
-export const iconMap = dir => {
-  const fileList = require.context(dir, true, /[\s\S]*$/);
-  let map = {};
-  fileList.keys().forEach(fileName => {
-    fileName = fileName.replace('./', '');
-    map[fileName.replace('.svg', '')] = require(`!svg-inline-loader!${dir}/${fileName}`);
-  });
-
-  return map
-}
-
 class Icon extends Component {
   render() {
     return (
