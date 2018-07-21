@@ -5,7 +5,6 @@
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
   "license": "MIT",
-  "private": true,
   "repository": "git+https://github.com/Kosai106/react-icon-system.git",
   "bugs": {
     "url": "https://github.com/Kosai106/react-icon-system/issues"
