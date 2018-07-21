@@ -16,16 +16,22 @@ src/
 
 ```json
 // package.json
-"start": "REACT_APP_ICON_PATH=../images/icons ...etc",
+"start": "REACT_APP_ICON_PATH=src/images/icons ...etc",
+```
+
+OR
+```bash
+# .env
+REACT_APP_ICON_PATH=src/images/icons
 ```
 
 ```jsx
-// Code example
+// Code
 import React from 'react';
-import Icon, { iconMap } from 'react-icon-system';
+import Icon from 'react-icon-system';
 
 const YourComponent = props => (
-  <Icon src={iconMap['alert']} />
+  <Icon src="alert" />
 )
 ```
 
@@ -38,25 +44,23 @@ __Example:__
 .color-red {
   color: red;
 }
-
 .color-blue {
   color: blue;
 }
-
 .color-yellow {
   color: yellow;
 }
 ```
 
 ```jsx
-import React from 'react';
-import Icon, { iconMap } from 'react-icon-system';
-
-const icons = iconMap('../images/icons/')
+import React, { Fragment } from 'react';
+import Icon from 'react-icon-system';
 
 const YourComponent = props => (
-  <Icon src={icons['alert']} className="color-red" />
-  <Icon src={icons['info']} className="color-blue" />
-  <Icon src={icons['warning']} className="color-yellow" />
+  <Fragment>
+    <Icon src="alert" className="color-red" />
+    <Icon src="info" className="color-blue" />
+    <Icon src="warning" className="color-yellow" />
+  </Fragment>
 )
 ```
