@@ -2,7 +2,7 @@
   "name": "react-icon-system",
   "description": "",
   "version": "1.0.0",
-  "main": "build/index.js",
+  "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
   "license": "MIT",
   "private": true,
@@ -12,11 +12,14 @@
     "svg-inline-loader": "^0.8.0",
     "webpack": "^4.16.0"
   },
+  "files": [
+    "lib/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack",
-    "prepublish": "rm -rf ./build && npm run build"
+    "build": "./node_modules/.bin/babel src -d lib",
+    "prepublish": "rm -rf ./lib && npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
