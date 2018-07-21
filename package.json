@@ -1,25 +1,30 @@
 {
   "name": "react-icon-system",
-  "description": "",
+  "description": "A simple no-bullshit icon system for React",
   "version": "1.0.0",
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "svg-inline-loader": "^0.8.0",
-    "webpack": "^4.16.0"
+  "repository": "git+https://github.com/Kosai106/react-icon-system.git",
+  "bugs": {
+    "url": "https://github.com/Kosai106/react-icon-system/issues"
   },
+  "homepage": "https://github.com/Kosai106/react-icon-system#readme",
   "files": [
-    "lib/*"
+    "lib/"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "./node_modules/.bin/babel src -d lib",
     "prepublish": "rm -rf ./lib && npm run build"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.16.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
