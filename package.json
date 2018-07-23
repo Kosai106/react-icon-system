@@ -1,6 +1,6 @@
 {
   "name": "react-icon-system",
-  "description": "A simple no-bullshit icon system for React",
+  "description": "A simple no-nonsense icon system for React",
   "version": "1.0.0",
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
@@ -14,23 +14,19 @@
     "lib/"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
     "build": "./node_modules/.bin/babel src -d lib",
     "prepublish": "rm -rf ./lib && npm run build"
   },
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "svg-inline-loader": "^0.8.0",
-    "webpack": "^4.16.0"
+    "svg-inline-loader": "^0.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "webpack-cli": "^3.0.8"
+    "babel-preset-react": "^6.24.1"
   }
 }
