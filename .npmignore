@@ -1,3 +1,1 @@
-.env
-webpack.config.js
-.gitignore
+example/
