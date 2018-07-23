@@ -1,10 +1,18 @@
 # react-icon-system
 
-### Usage
+<div style="text-align: center;">
+  <img src="./react-icon-system.png" alt="React-icon-system setup illustration" />
+</div>
+
+## Usage
+
+### Installation
 
 ```bash
 yarn add react-icon-system
 ```
+
+### Example
 
 ```bash
 # Folder structure example
