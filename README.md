@@ -3,6 +3,10 @@
 ### Usage
 
 ```bash
+yarn add react-icon-system
+```
+
+```bash
 # Folder structure example
 src/
 ├── components/
