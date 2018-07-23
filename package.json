@@ -1,7 +1,7 @@
 {
   "name": "react-icon-system",
   "description": "A simple no-nonsense icon system for React",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
   "license": "MIT",
