@@ -1,6 +1,14 @@
 {
   "name": "react-icon-system",
   "description": "A simple no-nonsense icon system for React",
+  "keywords": [
+    "react",
+    "icons",
+    "icon system",
+    "inline svg",
+    "svg",
+    "react-icon-system"
+  ],
   "version": "1.0.2",
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
