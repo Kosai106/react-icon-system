@@ -2,6 +2,13 @@
 
 <div style="text-align: center;">
   <img src="./react-icon-system.png" alt="React-icon-system setup illustration" />
+
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
+  <img src="https://img.shields.io/npm/v/react-icon-system.svg" alt="NPM version" />
+  <img src="https://img.shields.io/david/kosai106/react-icon-system.svg" alt="Dependencies" />
+  <img src="https://img.shields.io/npm/dw/react-icon-system.svg" alt="NPM Downloads/week" />
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
+  <img src="https://img.shields.io/badge/code%20style-prettier-ff69b4.svg" alt="Code style" />
 </div>
 
 ## Usage
