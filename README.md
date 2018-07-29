@@ -56,7 +56,7 @@ const YourComponent = props => (
 
 ### Pro tips
 
-- Instead of using a static colour for your SVGs, use `currentColor`. This way you can dynamically change the icon colour by using CSS.
+Instead of using a static colour for your SVGs, use `currentColor`. This way you can dynamically change the icon colour by using CSS.
 
 __Example:__
 ```css
