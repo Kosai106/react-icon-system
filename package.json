@@ -9,7 +9,7 @@
     "svg",
     "react-icon-system"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "/lib",
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (https://oesterkilde.dk/)",
   "license": "MIT",
@@ -22,10 +22,10 @@
     "lib/"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d lib",
+    "build": "BABEL_ENV=production ./node_modules/.bin/babel src -d lib",
     "prepublish": "rm -rf ./lib && npm run build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "svg-inline-loader": "^0.8.0"
@@ -35,6 +35,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.4.3",
     "babel-preset-react": "^6.24.1"
   }
 }
