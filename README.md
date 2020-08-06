@@ -40,6 +40,7 @@ src/
 ```
 
 OR
+
 ```bash
 # .env
 REACT_APP_ICON_PATH=src/images/icons
@@ -47,40 +48,36 @@ REACT_APP_ICON_PATH=src/images/icons
 
 ```jsx
 // Code
-import React from 'react';
-import Icon from 'react-icon-system';
+import React from "react";
+import Icon from "react-icon-system";
 
-const YourComponent = props => (
-  <Icon src="alert" />
-)
+const YourComponent = () => <Icon src="alert" />;
 ```
 
 ### Pro tips
 
 Instead of using a static colour for your SVGs, use `currentColor`. This way you can dynamically change the icon colour by using CSS.
 
-__Example:__
-```css
-.color-red {
-  color: red;
-}
-.color-blue {
-  color: blue;
-}
-.color-yellow {
-  color: yellow;
-}
+**Example:**
+
+```svg
+// SVG icon
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="currentColor" fill="none" d="..." />
+                    ^
+</svg>
 ```
 
 ```jsx
-import React, { Fragment } from 'react';
-import Icon from 'react-icon-system';
+// Code
+import React from "react";
+import Icon from "react-icon-system";
 
-const YourComponent = props => (
-  <Fragment>
-    <Icon src="alert" className="color-red" />
-    <Icon src="info" className="color-blue" />
-    <Icon src="warning" className="color-yellow" />
-  </Fragment>
-)
+const YourComponent = () => (
+  <div>
+    <Icon src="alert" style={{ color: "red" }} />
+    <Icon src="info" style={{ color: "blue" }} />
+    <Icon src="warning" style={{ color: "yellow" }} />
+  </div>
+);
 ```
