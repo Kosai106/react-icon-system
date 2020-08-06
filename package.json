@@ -17,22 +17,29 @@
   "bugs": {
     "url": "https://github.com/Kosai106/react-icon-system/issues"
   },
-  "homepage": "https://kosai106.github.io/react-icon-system/",
   "files": [
     "lib/"
   ],
   "scripts": {
     "build": "tsc",
-    "prepublish": "rm -rf ./lib && npm run build"
+    "test": "jest",
+    "prepublish": "rm -rf ./lib && npm run build",
+    "postinstall": "install-peers"
   },
   "peerDependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
+    "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.5",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "@types/webpack-env": "^1.15.2",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "install-peers-cli": "^2.2.0",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.3",
     "typescript": "^3.9.7"
   },
   "dependencies": {
