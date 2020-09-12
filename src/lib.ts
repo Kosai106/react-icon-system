@@ -1,10 +1,8 @@
-export type fileList = {
-  [key: string]: string;
-};
+export type fileList = Record<string, string>;
 
 export const computeIconList = (): fileList => {
   if (!process.env.REACT_APP_ICON_PATH) {
-    throw new Error("REACT_APP_ICON_PATH environment variable is not set!");
+    throw new Error('REACT_APP_ICON_PATH environment variable is not set!');
   }
 
   const fileList = require
@@ -12,8 +10,8 @@ export const computeIconList = (): fileList => {
     .keys();
 
   return fileList.reduce((acc: fileList, cur) => {
-    const fileName = cur.replace("./", "");
-    const iconName = fileName.replace(".svg", "");
+    const fileName = cur.replace('./', '');
+    const iconName = fileName.replace('.svg', '');
     acc[
       iconName
     ] = require(`!svg-inline-loader!../../../${process.env.REACT_APP_ICON_PATH}/${fileName}`);
