@@ -14,7 +14,7 @@ const Icon = forwardRef<SVGSVGElement, IconProps>(({ src, ...props }, ref) => (
     aria-hidden="true"
     {...props}
     ref={ref}
-    dangerouslySetInnerHtml={iconMap[src]}
+    dangerouslySetInnerHTML={{__html: iconMap[src]}}
   />
 ));
 
