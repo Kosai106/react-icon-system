@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
-import iconMap from './lib';
+import computeIconList from './lib';
 
-interface IconProps {
+export type IconProps = {
   src: string;
-}
+  className?: string;
+} & React.SVGAttributes<SVGElement>;
 
-const Icon = forwardRef<SVGSVGElement, IconProps>(({ src, ...props }, ref) => (
+export const Icon = forwardRef<SVGSVGElement, IconProps>(({ src, ...props }, ref) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -14,7 +15,7 @@ const Icon = forwardRef<SVGSVGElement, IconProps>(({ src, ...props }, ref) => (
     aria-hidden="true"
     {...props}
     ref={ref}
-    dangerouslySetInnerHTML={{__html: iconMap[src]}}
+    dangerouslySetInnerHTML={{ __html: computeIconList[src] }}
   />
 ));
 
