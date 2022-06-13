@@ -48,7 +48,6 @@ REACT_APP_ICON_PATH=src/images/icons
 
 ```jsx
 // Code
-import React from "react";
 import Icon from "react-icon-system";
 
 const YourComponent = () => <Icon src="alert" />;
@@ -70,14 +69,22 @@ Instead of using a static colour for your SVGs, use `currentColor`. This way you
 
 ```jsx
 // Code
-import React from "react";
 import Icon from "react-icon-system";
 
 const YourComponent = () => (
-  <div>
+  <>
     <Icon src="alert" style={{ color: "red" }} />
     <Icon src="info" style={{ color: "blue" }} />
     <Icon src="warning" style={{ color: "yellow" }} />
-  </div>
+  </>
+);
+
+// Or using Tailwind
+const YourComponent = () => (
+  <>
+    <Icon src="alert" className="text-red-500" />
+    <Icon src="info" className="text-blue-500" />
+    <Icon src="warning" className="text-yellow-500" />
+  </>
 );
 ```
