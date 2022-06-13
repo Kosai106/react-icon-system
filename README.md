@@ -34,8 +34,8 @@ src/
         └── warning.svg
 ```
 
-```json
-// package.json
+```bash
+# package.json
 "start": "REACT_APP_ICON_PATH=src/images/icons ...etc",
 ```
 
@@ -60,7 +60,7 @@ Instead of using a static colour for your SVGs, use `currentColor`. This way you
 
 **Example:**
 
-```svg
+```jsx
 // SVG icon
 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
   <path stroke="currentColor" fill="none" d="..." />
